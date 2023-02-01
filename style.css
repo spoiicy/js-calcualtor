@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.calculator{
+    margin: 125px auto;
+    padding: 4px;
+    width: 450px;
+    height: 500px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+}
+
+.calculator .screen{
+    border: 1px solid black;
+    flex: 1;
+}
+.calculator .buttons{
+    border: 1px solid black;
+    height:75%;
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    gap: 3px;
+    
+}
+
+.buttons .upper-section{
+    
+    flex: 1;
+    display: flex;
+    gap: 3px;
+    
+}
+.buttons .lower-section{
+    height: 80%;
+    display: flex;
+    gap: 3px;
+}
+
+
+#ac{
+    border: 1px solid black;
+    flex:1;
+    background-color:antiquewhite;
+}
+#cancel{
+    border: 1px solid black;
+    width: 50%;
+    background-color:bisque ;
+}
+
+.lower-section .number-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.lower-section .operation-section{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.numbers{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.zero-equals{
+    height: 25% ;
+    display: flex;
+    gap: 3px;
+}
+
+.numbers>*{
+    border: 1px solid black;
+    flex: 1 1 24%;
+}
+
+.zero-equals>*{
+    border: 1px solid black;
+    width: 50%;
+}
+
+.operation-section>*{
+    border: 1px solid black;
+    height: 25%;
+    
+}
+
+
+
+
+
