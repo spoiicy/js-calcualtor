@@ -3,6 +3,12 @@
     padding: 0px;
 }
 
+.screen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
 
 .calculator{
     margin: 125px auto;
@@ -49,7 +55,7 @@
     flex:1;
     background-color:antiquewhite;
 }
-#cancel{
+#clear{
     border: 1px solid black;
     width: 50%;
     background-color:bisque ;
