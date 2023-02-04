@@ -12,11 +12,13 @@
     font-size: 54px;
     word-wrap: break-word;
     min-height: 75px;
+    background-color:beige;
 }
 
 .button{
     padding:25px 0px;
     font-size: 20px;
+    background-color: 	#e6ebff;
 }
 
 
