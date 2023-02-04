@@ -90,7 +90,9 @@ function displayNumber(button_id){
             //display_number.appendChild(content);
             break;
         case 'clear':
-            display_number.removeChild(display_number.lastChild);
+            display_number.textContent ='';
+            firstOperator = true;
+            firstOperator_symbol = '';
             break;
         case 'add':
             if(firstOperator == false){
@@ -167,6 +169,15 @@ function displayNumber(button_id){
             }
             break;
             
+        case 'equals':
+            string = document.querySelector('.screen').textContent;
+            string = string.split(firstOperator_symbol);
+            let result = operate(firstOperator_symbol,parseInt(string[0]), parseInt(string[1]));
+            console.log(result);
+            display_number.textContent = '';
+            display_number.textContent = result;
+            firstOperator = true;
+        
             
 
         case 'ac':
